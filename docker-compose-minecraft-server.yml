@@ -1,5 +1,5 @@
 services:
-  mc:
+  minecraft:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
     restart: unless-stopped
@@ -13,7 +13,6 @@ services:
       INIT_MEMORY: "8G"
       MAX_MEMORY: "8G"
       MAX_PLAYERS: "10"
+      TZ: "Europe/Berlin"
     volumes:
-      - ./minecraft-data:/data:Z
-      - /etc/localtime:/etc/localtime:ro
-      - /etc/timezone:/etc/timezone:ro
+      - /home/fkoch/minecraft-data:/data
