@@ -9,5 +9,11 @@ services:
       - "25565:25565"
     environment:
       EULA: "TRUE"
+      MEMORY: "8G"
+      INIT_MEMORY: "8G"
+      MAX_MEMORY: "8G"
+      MAX_PLAYERS: "10"
     volumes:
-      - /home/user/minecraft-data:/data:Z
+      - ./minecraft-data:/data:Z
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
