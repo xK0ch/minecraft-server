@@ -14,4 +14,4 @@ services:
       MEMORY: "8G"
       TZ: "Europe/Berlin"
     volumes:
-      - /home/fkoch/minecraft-data:/data
+      - ${HOME}/minecraft:/data
