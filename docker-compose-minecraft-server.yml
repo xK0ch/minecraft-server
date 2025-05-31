@@ -14,4 +14,4 @@ services:
       MEMORY: "8G"
       TZ: "Europe/Berlin"
     volumes:
-      - ${HOME}/minecraft:/data
+      - ${MINECRAFT_DIR}:/data
