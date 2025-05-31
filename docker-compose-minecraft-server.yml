@@ -12,6 +12,8 @@ services:
       EULA: "true"
       MAX_PLAYERS: "10"
       MEMORY: "8G"
+      SEED: "1063292336748052244"
+      SERVER_NAME: "MLTSF"
       TZ: "Europe/Berlin"
     volumes:
       - ${MINECRAFT_DIR}:/data
