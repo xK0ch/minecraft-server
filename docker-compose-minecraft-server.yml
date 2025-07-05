@@ -8,11 +8,11 @@ services:
     ports:
       - "25565:25565"
     environment:
-      DIFFICULTY : "hard"
+      DIFFICULTY : "easy"
       ENABLE_WHITELIST: "true"
       EULA: "true"
       MAX_PLAYERS: "10"
-      MEMORY: "8G"
+      MEMORY: "10G"
       SEED: "694269427171849995"
       SERVER_NAME: "MLTSF"
       TZ: "Europe/Berlin"
