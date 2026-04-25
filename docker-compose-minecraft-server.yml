@@ -17,4 +17,4 @@ services:
       SERVER_NAME: "MLTSF"
       TZ: "Europe/Berlin"
     volumes:
-      - /home/fkoch/minecraft:/data
+      - /home/${HOST_USER}/minecraft:/data
